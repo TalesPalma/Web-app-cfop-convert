@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>CFOP</title>
+
+    <style>
+        body {
+            text-align: left;
+        }
+        h1{
+            color: #4CAF50;
+        }
+        table {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dados listados</h1>
+    {% comment %} Lista em uma tabela de forma organizada{% endcomment %}
+    <h1>CFOP Entrada</h1>
+    <table>
+        <tr>
+            <th>CFOP</th>
+            <th>Descrição</th>
+        </tr>
+        {% for i in cfopEntrada %}
+            <tr>
+                <td>{{i.cfop_com}}</td>
+                <td>{{i.nome}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% comment %} Lista em uma tabela de forma organizada os de saida agora{% endcomment %}
+    <h1>CFOP cfopCompra</h1>
+    <table>
+        <tr>
+            <th>CFOP</th>
+            <th>Descrição</th>
+        </tr>
+        {% for i in cfopCompra %}
+            <tr>
+                <td>{{i.cfop_com}}</td>
+                <td>{{i.nome}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
