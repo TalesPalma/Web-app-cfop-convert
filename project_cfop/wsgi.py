@@ -15,8 +15,8 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project_cfop.settings')
 
 application = get_wsgi_application()
 
-#Necessario descomentar para mandar para o vercel.
-app = get_wsgi_application()
+# #Necessario descomentar para mandar para o vercel.
+# app = get_wsgi_application()
 
 
 
